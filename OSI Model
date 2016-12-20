@@ -1,0 +1,72 @@
+TCP IP- Udemy
+
+Protocols
+IP -Internet Protocol
+TCP- Transmissions Control Protocol
+UDP- User Datagram Protocol
+ARP-Address Resolution Protocol
+
+SMTP – Simple Mail Transfer Protocol
+http- Hypertext Transport Protocol
+POP- Post Office Protocol
+
+Utilities
+
+Wireshark – Capturing packets
+Ping- Network diagnostics
+Netstat – Network diagnostics
+
+http Request>TCP>IP>Ethernet----→ Network Device---→ISP
+
+Ping uses ICMP -> IP
+====================================================
+
+OSI Model
+
+*Open Systems Interconnection
+*Seven Layer Model
+*Adopted by the ISO as standard communication architecture
+ 
+*Protocol Agnostic- Not tied to any specific protocol.
+
+	Layer 1- Physical
+•	Handles all physical connections- (coax, 4-pair, fiber)
+•	Handles Error Correction and detection on the physical medium
+
+	Layer 2- Data Link
+•	Handles translation from digital data to physical signals (framing)
+•	Physical Addressing (Media Access Control)
+•	Flow Control & access control (CSMA/CD Carrier Sense Multiple Access collision Detection) 
+  Random backoff timers to prevent collisions. Different Protocols use different ways 
+  –ex.  Appletalk uses Collision avoidance rather than detection
+
+	Layer 3 - Network
+•	Logical Addressing
+•	Handles getting data from one network to another (and repackaging data to work with the other side) 
+•	Contrast with Data Link layer which is within the same network
+	
+	Layer 4 – Transport
+•	handles end-to-end reliable data service
+•	IN the case of TCP/IP, handles ports to differentiate traffic
+	
+	Layer 5 – Session
+•	Controls specific dialogs between two systems (session management)
+•	Sometimes disagreement over which protocols land here (SSL/TLS, SSH, NetBios etc.)
+
+	Layer 6 – Presentation
+•	Manages how data is presented (xml, jpeg)
+
+	Layer 7 – Application  (http, ftp, smtp)
+•	Applications
+•	Closest to User
+•	Must do all management of connections
+•	Web access, email, file transfer
+
+Each layer speaks to another layer, adding a header (encapsulation), and each layer is responsible for peeling those 
+headers off at the other end. Each layer handles the same data on the sending or receiving end. 
+
+
+
+
+
+
